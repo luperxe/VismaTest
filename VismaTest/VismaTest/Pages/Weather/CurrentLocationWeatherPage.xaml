@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VismaTest.Pages.Weather.CurrentLocationWeatherPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="LightSkyBlue">
+            
+        <StackLayout HorizontalOptions="FillAndExpand" Margin="50,100" VerticalOptions="EndAndExpand" >
+            <Label Text="{Binding Name}" FontSize="50" />
+
+            <StackLayout Orientation="Horizontal">
+            <Label Text="{Binding CurrentTemp}" FontSize="30" HorizontalTextAlignment="Start"/>
+                <Image Source="{Binding ImageUri}" Margin="40,0,0,20" Scale="3"/>
+            </StackLayout>
+
+            <StackLayout Orientation = "Horizontal">
+                <Label Text="Min:"/>
+                <Label Text="{Binding Min}"/>
+
+                 <Label Text="Max:" Margin="40,0,0,0"/>
+                <Label Text="{Binding Max}"/>  
+             </StackLayout>
+
+            <Label Text="{Binding WeatherDescription}" />
+
+        </StackLayout>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

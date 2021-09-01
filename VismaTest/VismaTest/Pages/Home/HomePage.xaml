@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VismaTest.Pages.Home.HomePage" Title="{Binding Title}">
+<ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+            <Button Text="Google Auth"  Command="{Binding LoginCommand}" FontSize="Large"/>
+
+            <Button Text="View weather by provinces" Command="{Binding NavigateToWeatherCommand}" FontSize="Large"/>
+
+            <Button Text="View current location weather" Command="{Binding NavigateToCurrentLocationWeatherCommand}" FontSize="Large"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
